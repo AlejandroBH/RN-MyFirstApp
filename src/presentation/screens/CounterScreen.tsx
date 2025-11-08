@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { PrimaryButton } from '../components';
 
 export const CounterScreen = () => {
   const [count, setCount] = useState(10);
@@ -7,6 +8,8 @@ export const CounterScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{count}</Text>
+
+      <PrimaryButton label="" onPress={} onLongPress={} />
 
       <Pressable
         onPress={() => {
